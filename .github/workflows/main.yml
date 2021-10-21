@@ -1,0 +1,38 @@
+name: SecurityPipe
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Rodando o Build
+      run: echo Build deu bom
+    
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+    needs: build
+    steps:
+      - name: Rodando deploy DEV
+        run: echo Deploy DEV deu bom
+        
+  deploy-hml:
+    runs-on: ubuntu-latest
+    environment:
+      name: hml
+    needs: deploy-dev
+    steps:
+      - name: Rodando deploy HML
+        run: echo Deploy HML deu bom
+        
+  deploy-prd:
+    runs-on: ubuntu-latest
+    environment:
+      name: prd
+    needs: deploy-hml
+    steps:
+      - name: Rodando deploy PRD
+        run: echo Deploy PRD deu bom
+        
