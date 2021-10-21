@@ -48,7 +48,7 @@ jobs:
         run: |
           sudo apt-get install git -y
           git clone https://github.com/crypto-br/SecPipelineDemo.git
-          cd demoSecurityPipeline
+          cd SecPipelineDemo
           curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash
           horusec start -p="./" 
   
