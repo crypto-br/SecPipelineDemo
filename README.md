@@ -15,3 +15,9 @@ Demonstrando como aplicar ferramentas de segurança Open Source em um pipeline <
     $ horusec start -p="./" -e="true"
     ```
 * [OWASP ZAP](https://github.com/zaproxy/zaproxy/) (para análise DAST)
+
+## Resultado da pipeline de demonstração
+
+![Resultado da pipeline do LAB](https://github.com/crypto-br/SecPipelineDemo/blob/main/resultpipeline.jpg)
+
+* [Apresentação em PDF](https://github.com/crypto-br/SecPipelineDemo/blob/main/Apresenta%C3%A7%C3%A3o%20DEV%20WEEK%20PPT.pdf)
