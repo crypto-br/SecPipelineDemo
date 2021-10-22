@@ -5,12 +5,12 @@ Demonstrando como aplicar ferramentas de segurança Open Source em um pipeline <
 
 * GitHub Actions (para montar o workflow de demonstração)
 * [Trivy](https://github.com/aquasecurity/trivy) (Para realizar analise da imgem Docker)
-  * Para quebra automatica do pipeline, utilizar a opção "exit-code: '1'" no arquivo .yml do actions
+  * Para quebra automatica do pipeline, utilizar a opção "exit-code: '1'" no arquivo [main.yml](https://github.com/crypto-br/SecPipelineDemo/blob/main/.github/workflows/main.yml) do actions
   * ```sh
     exit-code: '1'
     ```
 * [HoruSec](https://horusec.io/site/) (para análise SAST)
-  * Para quebra automatica do pipeline, utilizar a opção  -e="true" na linha de comando do horusec:
+  * Para quebra automatica do pipeline, utilizar a opção  -e="true" na linha de comando do horusec no arquivo [main.yml](https://github.com/crypto-br/SecPipelineDemo/blob/main/.github/workflows/main.yml) do actions:
   * ```sh
     $ horusec start -p="./" -e="true"
     ```
