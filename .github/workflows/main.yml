@@ -46,11 +46,10 @@ jobs:
     steps:
       - name: Rodando o Horusec
         run: |
-          sudo apt-get install git -y
           git clone https://github.com/crypto-br/SecPipelineDemo.git
-          ls -l
           cd SecPipelineDemo/
-          curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash
+          wget https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh
+          sh install.sh
           horusec start -p="./" 
   
   deploy-hml:
