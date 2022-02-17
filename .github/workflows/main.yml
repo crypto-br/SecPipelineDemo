@@ -49,7 +49,7 @@ jobs:
           git clone https://github.com/crypto-br/SecPipelineDemo.git
           cd SecPipelineDemo/
           wget https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh
-          sh install.sh
+          chmod +x install.sh && ./install.sh
           horusec start -p="./" 
   
   deploy-hml:
