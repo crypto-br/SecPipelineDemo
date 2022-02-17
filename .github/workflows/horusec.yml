@@ -10,9 +10,8 @@ jobs:
         run: |
           git clone https://github.com/crypto-br/SecPipelineDemo.git
           cd SecPipelineDemo/
-          ls -la
           wget https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh
-          chmod +x install.sh && ./install.sh
+          ls -la
           
 
         
