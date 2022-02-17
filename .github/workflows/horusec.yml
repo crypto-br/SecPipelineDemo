@@ -12,6 +12,7 @@ jobs:
           cd SecPipelineDemo/
           wget https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh
           ls -la
+          chmod +x install.sh
           
 
         
