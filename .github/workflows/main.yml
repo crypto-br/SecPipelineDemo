@@ -49,7 +49,7 @@ jobs:
           sudo apt-get install git -y
           git clone https://github.com/crypto-br/SecPipelineDemo.git
           cd SecPipelineDemo
-          curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash
+          curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash
           horusec start -p="./" 
   
   deploy-hml:
