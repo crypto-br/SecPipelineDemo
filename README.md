@@ -21,3 +21,4 @@ Demonstrando como aplicar ferramentas de segurança Open Source em um pipeline <
 ![Resultado da pipeline do LAB](https://github.com/crypto-br/SecPipelineDemo/blob/main/resultpipeline.jpg)
 
 * [Apresentação em PDF](https://github.com/crypto-br/SecPipelineDemo/blob/main/Apresenta%C3%A7%C3%A3o%20DEV%20WEEK%20PPT.pdf)
+* [Video Palestra](https://www.youtube.com/watch?v=AYJtHQi_Pkw)
